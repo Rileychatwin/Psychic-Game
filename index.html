@@ -7,7 +7,32 @@
 </head>
 
 <body>
+    <h1>The Psychic Game!</h1>
 
+    <p>Guess what letter I'm thinking of</p>
+
+    <p>Wins:</p>
+
+    <p>Losses:</p>
+
+    <p>Guesses Left:</p>
+
+    <p>Your Guesses So Far:</p>
 </body>
+
+<script>
+    // variables
+    var winningLetter = ""
+    var lossCounter = 0;
+    var winCounter = 0;
+    var guessesLeft = ""
+    var guessesSoFar = ""
+
+    // Functions
+
+    String chars = "abcdefghijklmnopqrstuvwxyz";
+    Random rnd = new Random();
+    char c = chars.charAt(rnd.nextInt(chars.length()));
+</script>
 
 </html>
