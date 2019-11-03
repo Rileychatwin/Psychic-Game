@@ -22,17 +22,35 @@
 
 <script>
     // variables
-    var winningLetter = ""
+    var winCounter = ""
     var lossCounter = 0;
     var winCounter = 0;
     var guessesLeft = ""
     var guessesSoFar = ""
+    var alphabet = "abcdefghijklmnopqrstuvwxyz";
 
-    // Functions
+    winningLetter = alphabet[Math.floor(Math.random() * alphabet.length)];
+    // Functions to update scores
+    function updateWin() {
+        document.querySelector("#Win:").innerHTML = "Win:" + winCounter;
+    }
 
-    String chars = "abcdefghijklmnopqrstuvwxyz";
-    Random rnd = new Random();
-    char c = chars.charAt(rnd.nextInt(chars.length()));
+    function updatelosses() {
+        document.querySelector("#Losses:").innerHTML = "Losses:" + lossCounter;
+    }
+
+    // Function for winning letter
+    function letterWin() {
+
+    }
+
+    // Main Process
+
+    updateWin();
+    updatelosses();
 </script>
+
+
+
 
 </html>
